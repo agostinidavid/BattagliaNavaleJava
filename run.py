@@ -1,7 +1,7 @@
 from flask import Flask, url_for, redirect, render_template, request, g
 from flask_login import login_user, current_user, LoginManager, logout_user
-from lib.__database__ import *
-from lib.__user__ import *
+from lib.__database__ import getUser, checkUser, createUser
+from lib.__user__ import User
 import datetime
 
 app = Flask(__name__)
