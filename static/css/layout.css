@@ -1,0 +1,145 @@
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: max-content auto max-content;
+    background: linear-gradient(90deg, #0b0913 50%, #FFFFFF 50%);
+}
+
+.left {
+    grid-column: 1/2;
+    background-color: #0b0913;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    max-height: 100%;
+}
+
+.left .logo {
+    grid-row: 1/2;
+    margin-top: 50px;
+    justify-self: center;
+}
+
+.left .logo i {
+    color: #FFFFFF;
+    font-size: 40px;
+    transition: font-size 0.3s;
+}
+
+.left .logo i:hover {
+    font-size: 50px;
+}
+
+.left .menu {
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+
+.left .menu .link {
+    display: block;
+    padding: 50px 50px;
+}
+
+.left .menu .link a {
+    font-size: 18px;
+    color: #524F64;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.left .menu .link a:hover {
+    color: #ffffff;
+}
+
+.left .menu .link .active {
+    color: #ffffff;
+}
+
+.left .menu .link i {
+    display: inline-block;
+}
+
+.left .menu .link p {
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.left .logout {
+    justify-self: center;
+    margin-bottom: 50px;
+
+}
+
+.left .logout a {
+    font-size: 18px;
+    color: #ec3b3b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.left .logout a:hover {
+    color: #ff7171;
+}
+
+.left .logout i {
+    display: inline-block;
+}
+
+.left .logout p {
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.center {
+    grid-column: 2/3;
+    background-color: #FFFFFF;
+    border-radius: 30px 0 0 30px;
+    padding: 30px;
+    overflow: auto;
+}
+
+.center::-webkit-scrollbar {
+    display: none;
+}
+
+.right {
+    grid-column: 3/4;
+    background-color: #0b0913;
+    border-radius: 30px 0 0 30px;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    
+    .left .logo i{
+        font-size: 25px;
+    }
+
+    .left .menu i{
+        font-size: 25px;
+    }
+
+    .left .menu .link{
+        padding: 50px 15px;
+    }
+
+    .left .menu .link i{
+        font-size: 25px;
+    }
+    
+    .left .menu .link p {
+        display: none;
+    }
+
+    .left .logout i{
+        font-size: 25px;
+    }
+
+    .left .logout p {
+        display: none;
+    }
+}

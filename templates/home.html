@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SocialNetwork</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./static/css/layout.css">
+    <link rel="stylesheet" href="./static/css/post.css">
+
+    <!-- JS -->
+    <script src="https://kit.fontawesome.com/100b505ca0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    {{ current_user.name }}
+    <div class="wrapper">
+        <div class="left">
+            <div class="logo">
+                <div class="link"><a href="#" class="logo"><i class="fab fa-google"></i></a></div>
+            </div>
+            <div class="menu">
+                <div class="link"><a class="active" href="#"><i class="fas fa-home"></i><p>Home</p></a></div>
+                <div class="link"><a href="#"><i class="fas fa-heart"></i><p>Mi piace</p></a></div>
+                <div class="link"><a href="#"><i class="fas fa-bell"></i><p>Notifiche</p></a></div>
+                <div class="link"><a href="#"><i class="fas fa-user"></i><p>Profilo</p></a></div>
+            </div>
+            <div class="logout">
+                <div class="link"><a href="{{ url_for('logout') }}"><i class="fas fa-power-off"></i><p>Log out</p></a></div>
+            </div>
+        </div>
+        <div class="center">
+
+            <h1>Posts</h1>
+
+            <div class="post">
+                <div class="postImage">
+                    <img src="./img/posts/post1.jpg" alt="postImage">
+                </div>
+                <div class="postHeader">
+                    <a class="userImage" href="#"><img src="./img/friends/friend1.png" alt="userImage"></a>
+                    <div class="userName"><a href="#">Aimone Pinto</a></div>
+                    <p class="postDate">22/02/2021</p>
+                </div>
+                <div class="postBody">
+                    <div class="actionsBtn">
+                        <a href="#"><i class="far fa-heart"></i> Like</a>
+                        <a href="#"><i class="fas fa-share"></i> Share</a>
+                    </div>
+                    <div class="hashtags">
+                        <p>#hashtag1</p>
+                        <p>#hashtag2</p>
+                        <p>#hashtag3</p>
+                    </div>
+                    <h1 class="postTitle">Titolo post</h1>
+                    <p class="postDescription">Questa è la descrizione del post. Può essere lunga solo un certo
+                        numero di caratteri. Questa è la descrizione del post. Può essere lunga solo un certo numero
+                        di caratteri.</p>
+                    <a class="showComments" href="#">MOSTRA [2] COMMENTI <i class="fas fa-angle-double-right"></i></a>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="postImage">
+                    <img src="./img/posts/post2.jpg" alt="postImage">
+                </div>
+                <div class="postHeader">
+                    <a class="userImage" href="#"><img src="./img/friends/friend2.png" alt="userImage"></a>
+                    <div class="userName"><a href="#">Selene Moretti</a></div>
+                    <p class="postDate">22/02/2021</p>
+                </div>
+                <div class="postBody">
+                    <div class="actionsBtn">
+                        <a href="#"><i class="far fa-heart"></i> Like</a>
+                        <a href="#"><i class="fas fa-share"></i> Share</a>
+                    </div>
+                    <div class="hashtags">
+                        <p>#hashtag1</p>
+                        <p>#hashtag2</p>
+                        <p>#hashtag3</p>
+                    </div>
+                    <h1 class="postTitle">Titolo post</h1>
+                    <p class="postDescription">Questa è la descrizione del post. Può essere lunga solo un certo
+                        numero di caratteri. Questa è la descrizione del post. Può essere lunga solo un certo numero
+                        di caratteri.</p>
+                    <a class="showComments" href="#">MOSTRA [2] COMMENTI <i class="fas fa-angle-double-right"></i></a>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="postImage">
+                    <img src="./img/posts/post3.jpg" alt="postImage">
+                </div>
+                <div class="postHeader">
+                    <a class="userImage" href="#"><img src="./img/friends/friend3.png" alt="userImage"></a>
+                    <div class="userName"><a href="#">Cora Zito</a></div>
+                    <p class="postDate">22/02/2021</p>
+                </div>
+                <div class="postBody">
+                    <div class="actionsBtn">
+                        <a href="#"><i class="far fa-heart"></i> Like</a>
+                        <a href="#"><i class="fas fa-share"></i> Share</a>
+                    </div>
+                    <div class="hashtags">
+                        <p>#hashtag1</p>
+                        <p>#hashtag2</p>
+                        <p>#hashtag3</p>
+                    </div>
+                    <h1 class="postTitle">Titolo post</h1>
+                    <p class="postDescription">Questa è la descrizione del post. Può essere lunga solo un certo
+                        numero di caratteri. Questa è la descrizione del post. Può essere lunga solo un certo numero
+                        di caratteri.</p>
+                    <a class="showComments" href="#">MOSTRA [2] COMMENTI <i class="fas fa-angle-double-right"></i></a>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="postImage">
+                    <img src="./img/posts/post4.jpg" alt="postImage">
+                </div>
+                <div class="postHeader">
+                    <a class="userImage" href="#"><img src="./img/friends/friend4.png" alt="userImage"></a>
+                    <div class="userName"><a href="#">Raniero Calabrese</a></div>
+                    <p class="postDate">22/02/2021</p>
+                </div>
+                <div class="postBody">
+                    <div class="actionsBtn">
+                        <a href="#"><i class="far fa-heart"></i>Like</a>
+                        <a href="#"><i class="fas fa-share"></i>Share</a>
+                    </div>
+                    <div class="hashtags">
+                        <p>#hashtag1</p>
+                        <p>#hashtag2</p>
+                        <p>#hashtag3</p>
+                    </div>
+                    <h1 class="postTitle">Titolo post</h1>
+                    <p class="postDescription">Questa è la descrizione del post. Può essere lunga solo un certo
+                        numero di caratteri. Questa è la descrizione del post. Può essere lunga solo un certo numero
+                        di caratteri.</p>
+                    <a class="showComments" href="#">MOSTRA [2] COMMENTI <i class="fas fa-angle-double-right"></i></a>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="postImage">
+                    <img src="./img/posts/post5.jpg" alt="postImage">
+                </div>
+                <div class="postHeader">
+                    <a class="userImage" href="#"><img src="./img/friends/friend5.png" alt="userImage"></a>
+                    <div class="userName"><a href="#">Wilma Ferrari</a></div>
+                    <p class="postDate">22/02/2021</p>
+                </div>
+                <div class="postBody">
+                    <div class="actionsBtn">
+                        <a href="#"><i class="far fa-heart"></i> Like</a>
+                        <a href="#"><i class="fas fa-share"></i> Share</a>
+                    </div>
+                    <div class="hashtags">
+                        <p>#hashtag1</p>
+                        <p>#hashtag2</p>
+                        <p>#hashtag3</p>
+                    </div>
+                    <h1 class="postTitle">Titolo post</h1>
+                    <p class="postDescription">Questa è la descrizione del post. Può essere lunga solo un certo
+                        numero di caratteri. Questa è la descrizione del post. Può essere lunga solo un certo numero
+                        di caratteri.</p>
+                    <a class="showComments" href="#">MOSTRA [2] COMMENTI <i class="fas fa-angle-double-right"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="right"></div>
+    </div>
+
+
+
+
+
+
+
+    <!-- <div class="wrapper">
+        <div class="left">
+            <div class="link"><a href="#" class="logo"><i class="fab fa-google"></i></a></div>
+            <div class="link"><a href="#" class="active"><i class="fas fa-home"></i>Home</a></div>
+            <div class="link"><a href="#"><i class="fas fa-heart"></i>Mi piace</a></div>
+            <div class="link"><a href="#"><i class="fas fa-bell"></i>Notifiche</a></div>
+            <div class="link"><a href="#"><i class="fas fa-user"></i>Profilo</a></div>
+        </div>
+        <div class="center">
+            <div class="friends">
+                <div class="top">
+                    <h1>Amici</h1>
+                    <a href="#">Mostra tutti</a>
+                </div>
+                <div class="friendsList">
+                    <div class="friend">
+                        <img class="friendPhotoProfile" src="./img/friends/friend1.png" alt="">
+                        <a href="#">Aimone Pinto</a>
+                    </div>
+                    <div class="friend">
+                        <img class="friendPhotoProfile" src="./img/friends/friend2.png" alt="">
+                        <a href="#">Selene Moretti</a>
+                    </div>
+                    <div class="friend">
+                        <img class="friendPhotoProfile" src="./img/friends/friend3.png" alt="">
+                        <a href="#">Cora Zito</a>
+                    </div>
+                    <div class="friend">
+                        <img class="friendPhotoProfile" src="./img/friends/friend4.png" alt="">
+                        <a href="#">Raniero Calabrese</a>
+                    </div>
+                    <div class="friend">
+                        <img class="friendPhotoProfile" src="./img/friends/friend5.png" alt="">
+                        <a href="#">Wilma Ferrari</a>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h1>Posts</h1>
+                <div class="post">
+                    <div class="postImage">
+                        <img src="./img/posts/post1.jpg" alt="postImage">
+                    </div>
+                    <div class="postHeader">
+                        <a class="userImage" href="#"><img src="./img/friends/friend1.png" alt="userImage"></a>
+                        <div class="userName"><a href="#">Aimone Pinto</a></div>
+                        <p class="postDate">22/02/2021</p>
+                    </div>
+                    <div class="postBody">
+                        <div class="actionsBtn">
+                            <a href="#"><i class="far fa-heart"></i> Like</a>
+                            <a href="#"><i class="fas fa-share"></i> Share</a>
+                        </div>
+                        <div class="hashtags">
+                            <p>#hashtag1</p>
+                            <p>#hashtag2</p>
+                            <p>#hashtag3</p>
+                        </div>
+                        <h1 class="postTitle">Titolo post</h1>
+                        <p class="postDescription">Questa è la descrizione del post. Può essere lunga solo un certo
+                            numero di caratteri. Questa è la descrizione del post. Può essere lunga solo un certo numero
+                            di caratteri.</p>
+                        <a class="showComments" href="#">MOSTRA [2] COMMENTI <i
+                                class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="postImage">
+                        <img src="./img/posts/post2.jpg" alt="postImage">
+                    </div>
+                    <div class="postHeader">
+                        <a class="userImage" href="#"><img src="./img/friends/friend2.png" alt="userImage"></a>
+                        <div class="userName"><a href="#">Selene Moretti</a></div>
+                        <p class="postDate">22/02/2021</p>
+                    </div>
+                    <div class="postBody">
+                        <div class="actionsBtn">
+                            <a href="#"><i class="far fa-heart"></i> Like</a>
+                            <a href="#"><i class="fas fa-share"></i> Share</a>
+                        </div>
+                        <div class="hashtags">
+                            <p>#hashtag1</p>
+                            <p>#hashtag2</p>
+                            <p>#hashtag3</p>
+                        </div>
+                        <h1 class="postTitle">Titolo post</h1>
+                        <p class="postDescription">Questa è la descrizione del post. Può essere lunga solo un certo
+                            numero di caratteri. Questa è la descrizione del post. Può essere lunga solo un certo numero
+                            di caratteri.</p>
+                        <a class="showComments" href="#">MOSTRA [2] COMMENTI <i
+                                class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="postImage">
+                        <img src="./img/posts/post3.jpg" alt="postImage">
+                    </div>
+                    <div class="postHeader">
+                        <a class="userImage" href="#"><img src="./img/friends/friend3.png" alt="userImage"></a>
+                        <div class="userName"><a href="#">Cora Zito</a></div>
+                        <p class="postDate">22/02/2021</p>
+                    </div>
+                    <div class="postBody">
+                        <div class="actionsBtn">
+                            <a href="#"><i class="far fa-heart"></i> Like</a>
+                            <a href="#"><i class="fas fa-share"></i> Share</a>
+                        </div>
+                        <div class="hashtags">
+                            <p>#hashtag1</p>
+                            <p>#hashtag2</p>
+                            <p>#hashtag3</p>
+                        </div>
+                        <h1 class="postTitle">Titolo post</h1>
+                        <p class="postDescription">Questa è la descrizione del post. Può essere lunga solo un certo
+                            numero di caratteri. Questa è la descrizione del post. Può essere lunga solo un certo numero
+                            di caratteri.</p>
+                        <a class="showComments" href="#">MOSTRA [2] COMMENTI <i
+                                class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="postImage">
+                        <img src="./img/posts/post4.jpg" alt="postImage">
+                    </div>
+                    <div class="postHeader">
+                        <a class="userImage" href="#"><img src="./img/friends/friend4.png" alt="userImage"></a>
+                        <div class="userName"><a href="#">Raniero Calabrese</a></div>
+                        <p class="postDate">22/02/2021</p>
+                    </div>
+                    <div class="postBody">
+                        <div class="actionsBtn">
+                            <a href="#"><i class="far fa-heart"></i> Like</a>
+                            <a href="#"><i class="fas fa-share"></i> Share</a>
+                        </div>
+                        <div class="hashtags">
+                            <p>#hashtag1</p>
+                            <p>#hashtag2</p>
+                            <p>#hashtag3</p>
+                        </div>
+                        <h1 class="postTitle">Titolo post</h1>
+                        <p class="postDescription">Questa è la descrizione del post. Può essere lunga solo un certo
+                            numero di caratteri. Questa è la descrizione del post. Può essere lunga solo un certo numero
+                            di caratteri.</p>
+                        <a class="showComments" href="#">MOSTRA [2] COMMENTI <i
+                                class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="postImage">
+                        <img src="./img/posts/post5.jpg" alt="postImage">
+                    </div>
+                    <div class="postHeader">
+                        <a class="userImage" href="#"><img src="./img/friends/friend5.png" alt="userImage"></a>
+                        <div class="userName"><a href="#">Wilma Ferrari</a></div>
+                        <p class="postDate">22/02/2021</p>
+                    </div>
+                    <div class="postBody">
+                        <div class="actionsBtn">
+                            <a href="#"><i class="far fa-heart"></i> Like</a>
+                            <a href="#"><i class="fas fa-share"></i> Share</a>
+                        </div>
+                        <div class="hashtags">
+                            <p>#hashtag1</p>
+                            <p>#hashtag2</p>
+                            <p>#hashtag3</p>
+                        </div>
+                        <h1 class="postTitle">Titolo post</h1>
+                        <p class="postDescription">Questa è la descrizione del post. Può essere lunga solo un certo
+                            numero di caratteri. Questa è la descrizione del post. Può essere lunga solo un certo numero
+                            di caratteri.</p>
+                        <a class="showComments" href="#">MOSTRA [2] COMMENTI <i
+                                class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+            </div>
+        </div> -->
+</body>
+
+</html>

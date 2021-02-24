@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #0b0913;
+    height: 100%;
+    color: #0b0913;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1086%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(11%2c 9%2c 19%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c929.161C174.262%2c928.952%2c228.655%2c677.379%2c368.535%2c573.452C494.608%2c479.783%2c692.987%2c487.952%2c774.521%2c353.712C856.96%2c217.981%2c816.094%2c42.888%2c785.423%2c-112.927C755.982%2c-262.495%2c693.805%2c-399.964%2c602.183%2c-521.795C505.304%2c-650.617%2c400.748%2c-793.161%2c244.397%2c-832.339C89.363%2c-871.187%2c-58.111%2c-764.719%2c-213.206%2c-726.114C-376.624%2c-685.437%2c-588.642%2c-732.547%2c-691.675%2c-599.34C-795.569%2c-465.02%2c-698.703%2c-270.061%2c-697.296%2c-100.256C-696.132%2c40.216%2c-745.579%2c186.107%2c-684.123%2c312.428C-623.147%2c437.763%2c-472.627%2c481.01%2c-369.103%2c574.336C-239.723%2c690.972%2c-174.193%2c929.37%2c0%2c929.161' fill='%2307060c'%3e%3c/path%3e%3cpath d='M1920 1812.644C2068.947 1803.6660000000002 2219.402 1819.135 2355.031 1756.921 2503.4809999999998 1688.826 2662.27 1598.156 2720.3630000000003 1445.5140000000001 2777.93 1294.254 2708.474 1126.595 2652.751 974.646 2605.556 845.952 2503.782 754.481 2425.643 641.858 2336.005 512.662 2307.989 316.014 2159.628 263.90099999999995 2012.019 212.05200000000002 1869.675 353.50699999999995 1718.406 393.43499999999995 1561.4560000000001 434.86199999999997 1381.426 402.337 1254.031 502.93499999999995 1118.597 609.881 1019.143 777.238 1013.93 949.727 1008.843 1118.049 1151.007 1246.2069999999999 1227.028 1396.47 1299.379 1539.48 1312.509 1728.966 1449.905 1811.481 1587.017 1893.825 1760.352 1822.267 1920 1812.644' fill='%230f0c1a'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1086'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 20px 0px #0b091320;
+    -moz-box-shadow: 0px 0px 20px 0px #0b091320;
+    box-shadow: 0px 0px 20px 0px #0b091320;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+
+.form h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form p {
+    background-color: #ec3b3b;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 9999px;
+    padding: 2px 10px;
+    font-size: 12px;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.form input,
+.form label,
+.form button,
+.form a {
+    display: block;
+}
+
+.form input {
+    margin: 0 auto;
+    width: 250px;
+    font-size: 16px;
+    padding: 10px 10px;
+    border-radius: 9999px;
+    background-color: #E2E2E2;
+    border: none;
+    border: 2px solid #ffffff;
+    margin-bottom: 10px;
+}
+
+.form input::placeholder {
+    color: #8A8A8A;
+    font-size: 14px;
+}
+
+.form input:focus {
+    outline: none;
+    border: 2px solid #0b0913;
+}
+
+.form button {
+    background-color: #0b0913;
+    color: #ffffff;
+    border-radius: 9999px;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: opacity 0.3s;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form button:hover {
+    opacity: 0.8;
+}
+
+.form button:focus {
+    outline: none;
+}
+
+.form a {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #8A8A8A;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.form a:hover {
+    color: #0b0913;
+}
